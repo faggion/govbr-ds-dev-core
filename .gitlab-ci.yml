@@ -131,6 +131,8 @@ pages-branch:
     expire_in: 1 week
     expose_as: "Build"
   script:
+    - ls public
+    - echo $CI_PIPELINE_ID
     - mkdir -p public/$CI_PIPELINE_ID
     - npm run build
     - cp -R ./dist public/$CI_PIPELINE_ID
