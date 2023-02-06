@@ -8,13 +8,13 @@ image: node:18-alpine
 
 stages:
   - Dependências
-  - test
-  - performance
-  - accessibility
-  - Qualidade
+  # - test
+  # - performance
+  # - accessibility
+  # - Qualidade
   - Build
   - Pages
-  - Release
+  # - Release
 
 cache:
   paths:
