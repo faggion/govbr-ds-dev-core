@@ -123,6 +123,19 @@ pages:
   only:
     - main
 
+pages-branch:
+  stage: Pages
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+    expose_as: "Build"
+  script:
+    - mkdir -p public/$CI_PIPELINE_ID
+    - npm run build
+    - cp -R ./dist public/$CI_PIPELINE_ID
+  
+
 Semantic Release:
   stage: Release
   when: manual
