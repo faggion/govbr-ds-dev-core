@@ -68,6 +68,7 @@ pages:
   stage: Pages
   script:
     - mkdir -p tmp
+    - echo $CI_PIPELINE_ID
     - echo "$CI_PIPELINE_ID" > tmp/index.html
     - mkdir -p public
     - mkdir -p public/$CI_PIPELINE_ID/
