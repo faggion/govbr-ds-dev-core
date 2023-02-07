@@ -60,6 +60,7 @@ pages-x:
 pages:
   stage: Pages
   artifacts:
+    name: "$CI_PIPELINE_ID"
     paths:
       - public
     expire_in: 1 week
