@@ -59,7 +59,7 @@ pages-x:
 
 
 pages:
-  stage: publish
+  stage: Pages
   script:
     - mkdir -p tmp
     - echo "$CI_PIPELINE_ID" > tmp/index.html
