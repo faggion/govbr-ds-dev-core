@@ -57,19 +57,20 @@ pages-x:
   only:
     - main
 
+
 pages:
-  stage: Pages
+  stage: publish
+  script:
+    - mkdir -p tmp
+    - echo "$CI_PIPELINE_ID" > tmp/index.html
+    - mkdir -p public
+    - mkdir -p public/$CI_PIPELINE_ID/
+    - cp tmp/* public/$CI_PIPELINE_ID/ -R
   artifacts:
     name: "$CI_PIPELINE_ID"
     paths:
       - public
-    expire_in: 1 week
-    expose_as: "Build"
-  script:
-    - ls public
-    - echo $CI_PIPELINE_ID
-    - mkdir -p public/$CI_PIPELINE_ID
-    - npm run build
-    - cp -R ./dist public/$CI_PIPELINE_ID
+    expire_in: 5 days
+
   
 
