@@ -72,6 +72,8 @@ pages:
     - echo "$CI_PIPELINE_ID" > tmp/index.html
     - mkdir -p public
     - mkdir -p public/$CI_PIPELINE_ID/
+    - npm run build
+    - mv dist public/$CI_PIPELINE_ID/
     - cp tmp/* public/$CI_PIPELINE_ID/ -R
   artifacts:
     name: "$CI_PIPELINE_ID"
