@@ -75,7 +75,7 @@ pages:
     
     - npm run build
     # - cp tmp/* public/$CI_PIPELINE_ID/ -R
-    - mv dist public/$CI_PIPELINE_ID/
+    - cp dist/* public/$CI_PIPELINE_ID/ -R
     
     
     - ls public/$CI_PIPELINE_ID/
