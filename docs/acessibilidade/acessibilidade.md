@@ -113,7 +113,7 @@ O Padrão Digital de Governo, por meio do *Design System*, vem a cada evolução
 <https://www.gov.br/ds/guias/wai-aria>
 
 -   Acessibilidade na WIKI GOV.BR-DS –Guis e Boas Práticas
-<https://govbr-ds.gitlab.io/govbr-ds-wiki/acessibilidade/>
+<https://gov.br/ds/wiki/acessibilidade/>
 
 ## Referências
 
