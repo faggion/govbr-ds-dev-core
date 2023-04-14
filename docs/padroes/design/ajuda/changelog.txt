@@ -1,9 +1,0 @@
-# Changelog
-Todas as alterações notáveis neste projeto serão documentadas neste arquivo.
-
-## [Released]
-
-## [1.0.0] - 17/11/2021
-
-### Adicionado
- - Orientações e Boas Práticas para o padrão de Ajuda e Comunicação.
